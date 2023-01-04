@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "Focus extention",
+    "description": "Extention for your time management!",
+    "version": "0.1",
+    "action": {
+      "default_popup": "html/popup.html",
+      "default_icon": "img/128.png"
+    }
+  }
