@@ -1,0 +1,2 @@
+day 1 and 2 (commit 06.01.2023):
+    created main folders, added sync with storage, working on settings.

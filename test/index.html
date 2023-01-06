@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiments</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="script.js" defer type="module"></script>
+</head>
+<body>
+    <div class="parent">
+        <div class="card">
+            <a class="back-link" id="back" href="#"> Back to settings</a>
+            <h1 class="header">Change Limits Info</h1>
+            <form class="form" id="form">
+                <div class="wrapper">
+                    <span class="input-name">Name</span>
+                    <input class="input" placeholder="Youtube" required="" type="text" name="name" id="name">
+                    <span class="input-border"></span>
+                </div>
+                <div class="wrapper">
+                    <span class="input-name">Url</span>
+                    <input class="input" placeholder="https://www.youtube.com/" required type="url" name="url" id="url" pattern="[Hh][Tt][Tt][Pp][Ss]?:\/\/(?:(?:[a-zA-Z\u00a1-\uffff0-9]+-?)*[a-zA-Z\u00a1-\uffff0-9]+)(?:\.(?:[a-zA-Z\u00a1-\uffff0-9]+-?)*[a-zA-Z\u00a1-\uffff0-9]+)*(?:\.(?:[a-zA-Z\u00a1-\uffff]{2,}))(?::\d{2,5})?(?:\/[^\s]*)?">
+                 <span class="input-border"></span>
+                </div>
+                <div class="wrapper">
+                    <span class="input-name">Limit time (In hours and minutes)</span>
+                    <div class="time-wrapper">
+                        <input class="time-input" placeholder="2" required type="number" step="none" min="0" max="23" name="hours" id="hours">
+                        <span>:</span>
+                        <input class="time-input" placeholder="2" required type="number" step="none" min="0" max="59" name="minutes" id="minutes">
+                    </div>
+                </div>
+                <button class="cancel-btn btn">Cancel</button>
+                <button class="confirm-btn btn" type="submit">Confirm</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

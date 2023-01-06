@@ -3,8 +3,17 @@
     "name": "Focus extention",
     "description": "Extention for your time management!",
     "version": "0.1",
+    
+    "background": {
+      "service_worker": "js/background.js",
+      "type": "module"
+    },
+    "permissions": [
+      "tabs", "storage", "windows", "activeTab"
+    ],
     "action": {
       "default_popup": "html/popup.html",
       "default_icon": "img/128.png"
     }
+    
   }
