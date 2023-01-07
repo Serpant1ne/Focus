@@ -1,0 +1,133 @@
+.edit-menu{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(96, 165, 250, 0.5);
+    backdrop-filter: blur(5px);
+    transition: .5s;
+}
+
+.card{
+    /* height: 300px; */
+    align-items: center;
+    width: 600px;
+    padding: 24px;
+    border-radius: 8px;
+    background-color: var(--background-color);
+}
+
+.header{
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.wrapper{
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.input{
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-inline: 8px;
+    padding-block: 12px;
+    border-bottom: 2px solid var(--placeholder-color);
+    transition: background-color ease-in-out .3s;
+}
+
+input::placeholder{
+    color: var(--placeholder-color);
+}
+
+.input-border {
+    position: absolute;
+    background: var(--main-color);
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    transition: 0.3s;
+}
+
+.input:hover{
+    background-color: #e2e8f0;
+}
+
+.time-input:hover{
+    background-color: #e2e8f0;
+}
+
+
+input:focus {
+    outline: none;
+}
+
+input:focus ~ .input-border {
+    width: 100%;
+}
+
+.btn{
+    padding: 14px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--background-color);
+}
+
+.time-input{
+    width: 2ch;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--placeholder-color);
+    text-align: center;
+    transition: background-color ease-in-out .3s, border-bottom ease-in-out .3s;
+}
+
+.time-input:focus{
+    border-bottom: 2px solid var(--main-color);
+}
+
+.confirm-btn{
+    background-color: #22c55e;
+}
+
+.delete-btn{
+    background-color: #ef4444;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.time-input::-webkit-outer-spin-button,
+.time-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.btn:hover{
+    opacity: 0.9;
+}
+
+.btn:focus{
+    outline: 2px solid var(--main-color);
+    
+}
+
+.back-link{
+    outline-offset: 3px;
+    font-size: 12px;
+    color: var(--main-color);
+}
+
+.back-link:focus{
+    outline: 2px solid var(--main-color);
+}

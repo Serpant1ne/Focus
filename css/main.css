@@ -14,3 +14,7 @@
     color: var(--text-color);
     
 }
+
+.hidden{
+    display: none !important;
+}

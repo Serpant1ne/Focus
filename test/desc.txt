@@ -1,1 +1,2 @@
 This folder includes files, that used only for testing features or making pages that going later to main scripts and pages.
+

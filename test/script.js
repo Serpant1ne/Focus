@@ -21,13 +21,4 @@ form.onsubmit = (e) => {
     objOrig["limit"] = limit;
     // set to data to storage
     console.log('after🍎', objOrig);
-
-    
-    
-    
-
-
 }
-
-
-const formData = new FormData(form);
